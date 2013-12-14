@@ -1,0 +1,64 @@
+.footer {
+  z-index: 10001;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  opacity: 0.45;
+}
+
+ul.no-list li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+.messages li time {
+  opacity: 0.35;
+  padding-left: 5px;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 999px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+.bubble
+  {
+  position: relative;
+  width: 345px;
+  height: 120px;
+  padding: 0px;
+  background: #FFFFFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.bubble:after
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 22px 15px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -22px;
+  left: 157px;
+}

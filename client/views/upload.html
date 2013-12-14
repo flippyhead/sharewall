@@ -1,0 +1,47 @@
+<template name="upload">
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Share something.</h1>
+
+      <h2>Share a photo</h2>
+      <p>Upload a photo to be shared immediately on the screen.</p>
+
+      <form role="form" id="image">
+        <div class="form-group">
+          <input type="text" name="title" placeholder="First, write a title..." class="form-control" >
+        </div>
+
+        <div class="form-group">
+          {{#S3 callback="addImage"}}
+            <span class="btn btn-primary btn-lg btn-file">
+              Next, select one or more photos... <input type="file" multiple>
+            </span>
+          {{/S3}}
+        </div>
+      </form>
+
+      <hr/>
+
+      <h2>Share your thoughts</h2>
+      <p>Enter a message to be displayed on the screen.</p>
+
+      <form role="form" id="message">
+        <div class="form-group">
+          <input type="text" name="message" placeholder="Write a message..." class="form-control" >
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-lg">Post message</button>
+        </div>
+      </form>
+
+      <hr/>
+
+      <h4>Spare change for server costs?</h4>
+      <a target="_blank" class="coinbase-button" data-code="54b56394f1a9b98747d4eeb7550e8ccc" data-button-style="donation_large" href="https://coinbase.com/checkouts/54b56394f1a9b98747d4eeb7550e8ccc"><img alt="Donate Bitcoins" src="http://coinbase.com/assets/buttons/donation_large-6ec72b1a9eec516944e50a22aca7db35.png"></a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+
+
+    </div>
+  </div>
+
+</template>

@@ -1,0 +1,17 @@
+<template name="home">
+
+  <h1 class="">
+    Visit <strong>tougo.ptb.io</strong> to post.
+  </h1>
+
+  <div id="galleria">
+    <img src="http://tougo.s3.amazonaws.com/c91b177e-8fdf-4fd8-87d6-2310963645ff.gif"/>
+  </div>
+
+  <ul class="footer no-list messages">
+    {{#each this}}
+      {{> message}}
+    {{/each}}
+  </ul>
+
+</template>
