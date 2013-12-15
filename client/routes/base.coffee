@@ -10,17 +10,17 @@ Router.map ->
 
   @route 'loading', path: '/loading'
 
-  @route 'home',
-    path: '/'
+  @route 'wall',
+    path: '/wall'
     waitOn: ->
       [Meteor.subscribe('images'), Meteor.subscribe('messages')]
     data: ->
       Messages.find {}, sort: {createdAt: 1}
 
-  @route 'upload',
-    path: '/upload'
+  @route 'share',
+    path: '/'
     data: ->
       {title: ''}
 
-  @route 'uploaded',
-    path: '/uploaded'
+  @route 'shared',
+    path: '/shared'

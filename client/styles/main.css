@@ -1,11 +1,29 @@
+.readable {
+  color: #afafaf;
+  opacity: 0.45;
+}
+
+.banner {
+  z-index: 10001;
+  position: fixed;
+  right: 0;
+  text-transform: uppercase;
+  -webkit-transform-origin: 100% 100%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+}
+
+.banner strong {
+  color: #fff;
+}
+
 .footer {
   z-index: 10001;
   position: fixed;
   bottom: 0px;
   text-align: center;
   width: 100%;
-  color: #fff;
-  opacity: 0.45;
 }
 
 ul.no-list li {
@@ -13,9 +31,18 @@ ul.no-list li {
   padding-bottom: 5px;
 }
 
+.messages {
+  opacity: 0.75;
+  color: #fff;
+  font-size: 150%;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
 .messages li time {
-  opacity: 0.35;
+  opacity: 0.65;
   padding-left: 5px;
+  font-size: 80%;
+  vertical-align: middle;
 }
 
 .btn-file {

@@ -1,9 +1,9 @@
-Template.upload.events
+Template.share.events
   'keydown [name=title]': (e) ->
     @title = e.target.value
 
   'change input[type=file]': ->
-    Router.go 'uploaded'
+    Router.go 'shared'
 
   'submit form#message': (e) ->
     e.preventDefault()
@@ -12,4 +12,4 @@ Template.upload.events
 
     Meteor.call 'addMessage', body, (error, id) ->
       return alert(error.reason) if error
-      Router.go 'uploaded'
+      Router.go 'shared'

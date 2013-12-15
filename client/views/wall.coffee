@@ -1,4 +1,4 @@
-Template.home.rendered = ->
+Template.wall.rendered = ->
     length = 0
 
     Galleria.ready ->

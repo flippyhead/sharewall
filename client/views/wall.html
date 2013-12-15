@@ -1,0 +1,17 @@
+<template name="wall">
+
+  <div id="galleria">
+    <img src="http://tougo.s3.amazonaws.com/c91b177e-8fdf-4fd8-87d6-2310963645ff.gif"/>
+  </div>
+
+  <h1 class="banner readable">
+    Visit <strong>sharewall.co</strong> to post
+  </h1>
+
+  <ul class="footer no-list messages readable">
+    {{#each this}}
+      {{> message}}
+    {{/each}}
+  </ul>
+
+</template>
