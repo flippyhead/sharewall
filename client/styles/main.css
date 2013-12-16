@@ -10,8 +10,8 @@
   text-transform: uppercase;
   -webkit-transform-origin: 100% 100%;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  transform-origin: 100% 100%;
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: 100% 100%;
 }
 
 .banner strong {
