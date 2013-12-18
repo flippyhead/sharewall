@@ -3,4 +3,5 @@
 Meteor.methods
   addImage: (url, context) ->
     {title} = context
-    Images.insert({url, title})
+    createdAt = new Date().getTime()
+    Images.insert({url, title, createdAt})
