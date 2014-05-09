@@ -1,4 +1,4 @@
 Meteor.call 'S3config',
-    key: 'AKIAJ4EJGRMW6EQ66QYA'
-    secret: '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'
+    key: 'AKIAI3F5LUJG6MLBE5LQ'
+    secret: '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'
     bucket: 'tougo'
